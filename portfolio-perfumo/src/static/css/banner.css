@@ -1,0 +1,35 @@
+.banner {
+    background-color: #252525;
+}
+
+#title {
+    color: white !important;
+}
+
+.custom-button {
+    color: white;
+}
+
+.gradient-text {
+    padding: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #ff50cb; 
+}
+
+.white-text {
+    color: white;
+}
+
+.gradient-icons {
+    color: #DA70D6 !important;
+    margin-right: 10px;
+}
+
+.gradient-button {
+    color: #DA70D6 !important;
+}
+
+.custom-image {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(255, 0, 255, 0.8); }

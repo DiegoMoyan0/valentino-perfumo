@@ -1,0 +1,16 @@
+.custom-navbar {
+    background-color: #252525;
+    position: relative;
+    border-bottom: solid 3px #AD5389;
+  }
+  
+  .custom-button {
+    background-image: linear-gradient(to right, #AD5389, #3C1053);
+    border: 2px solid;
+    border-image: linear-gradient(to right, #AD5389, #3C1053) 1 !important;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
