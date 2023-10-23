@@ -16,7 +16,8 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #ff50cb; 
 }
-
+.ref{
+text-decoration: none;}
 .white-text {
     color: white;
 }
