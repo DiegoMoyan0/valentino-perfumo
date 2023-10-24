@@ -1,6 +1,7 @@
 #about {
-  margin-top: 200px;
-    background-color: #252525 !important;
+  margin-top: 100px;
+  padding-top: 100px;
+  background: linear-gradient(135deg, #2a2c5b, #565b91, #88304e);
   }
 
 .about-section {

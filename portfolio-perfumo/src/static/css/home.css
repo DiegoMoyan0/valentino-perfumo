@@ -1,6 +1,6 @@
 .custom-navbar {
-  background: linear-gradient(135deg, #2a2c5b, #565b91, #88304e);
-  position: relative;
+    background-color: #252525;
+    position: relative;
     border-bottom: solid 3px #AD5389;
   }
   
