@@ -7,7 +7,7 @@ const Footer = () => {
       <Container>
         <Row className="align-items-center text-white">
           <Col size={12} sm={12} className="text-center text-sm">
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Copyright 2023. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>
