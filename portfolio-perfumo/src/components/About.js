@@ -1,8 +1,7 @@
 import React, { useTransition, useState } from "react";
 import about from "../static/img/about-image.png";
 import TabButton from "./TabButton";
-import '../static/css/about.css'
-
+import "../static/css/about.css";
 
 const TAB_DATA = [
   {
@@ -12,7 +11,6 @@ const TAB_DATA = [
       <ul className="">
         <li>Node.js</li>
         <li>Express</li>
-        <li>PostgreSQL</li>
         <li>Sequelize</li>
         <li>JavaScript</li>
         <li>React</li>
@@ -52,46 +50,40 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id="about">
-      <div className="">
-        <div className="">
-          <img src={about} alt="Description" className="" />
+    <section className="text-white about-section" id="about">
+      <div className="image-container">
+        <div>
+          <img src={about} alt="Description" className="about-image" />
         </div>
-        <div className="">
-          <div>
-            <h2 className="">About Me</h2>
-            <p className="">
-              I am a full stack web developer with a passion for creating
-              interactive and responsive web applications. I have experience
-              working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-              Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-              looking to expand my knowledge and skill set. I am a team player and
-              I am excited to work with others to create amazing applications.
-            </p>
-          </div>
-          <div className="">
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              Skills
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              Education
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              Certifications
-            </TabButton>
-          </div>
-          <div className="">
-            {TAB_DATA.find((t) => t.id === tab).content}
-          </div>
+      </div>
+      <div className="text-container">
+        <div>
+          <h2 className="">About Me</h2>
+          <p className="">
+          Soy un desarrollador web full stack con pasión por crear aplicaciones web interactivas y receptivas. Tengo experiencia trabajando con JavaScript, React, Node.js, Express, Sequelize, HTML, CSS y Git. Aprendo rápido y siempre busco expandir mi conocimiento y conjunto de habilidades. Soy un jugador de equipo y estoy emocionado de trabajar con otros para crear aplicaciones increíbles.          </p>
+        </div>
+        <div>
+          <TabButton
+            selectTab={() => handleTabChange("skills")}
+            active={tab === "skills"}
+          >
+            Skills
+          </TabButton>
+          <TabButton
+            selectTab={() => handleTabChange("education")}
+            active={tab === "education"}
+          >
+            Education
+          </TabButton>
+          <TabButton
+            selectTab={() => handleTabChange("certifications")}
+            active={tab === "certifications"}
+          >
+            Certifications
+          </TabButton>
+        </div>
+        <div>
+          {TAB_DATA.find((t) => t.id === tab).content}
         </div>
       </div>
     </section>

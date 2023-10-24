@@ -1,7 +1,34 @@
-
-
-
 #about {
     background-color: #252525 !important;
   }
-  
+
+.about-section {
+  display: flex;
+}
+
+.image-container {
+  flex: 1;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.text-container {
+  flex: 1;
+}
+
+.about-image {
+  max-width: 100%;
+}
+
+@media (max-width: 860px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .image-container {
+    margin-bottom: 20px;
+  }
+
+
+}
