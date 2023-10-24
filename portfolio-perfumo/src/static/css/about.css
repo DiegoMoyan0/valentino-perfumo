@@ -1,4 +1,5 @@
 #about {
+  margin-top: 200px;
     background-color: #252525 !important;
   }
 
@@ -18,7 +19,8 @@
 }
 
 .about-image {
-  max-width: 80%;
+  max-width: 70%;
+  height: auto;
 }
 
 @media (max-width: 860px) {
