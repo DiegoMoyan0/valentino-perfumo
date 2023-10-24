@@ -18,8 +18,8 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Education",
-    id: "education",
+    title: "Educacion",
+    id: "educacion",
     content: (
       <ul className="">
         <li>Fullstack Academy of Code</li>
@@ -28,8 +28,8 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Certificaciones",
+    id: "certificaciones",
     content: (
       <ul className="">
         <li>AWS Cloud Practitioner</li>
@@ -58,7 +58,7 @@ const AboutSection = () => {
       </div>
       <div className="text-container">
         <div>
-          <h2 className="">About Me</h2>
+          <h2 className="">Sobre Mi</h2>
           <p className="">
           Soy un desarrollador web full stack con pasión por crear aplicaciones web interactivas y receptivas. Tengo experiencia trabajando con JavaScript, React, Node.js, Express, Sequelize, HTML, CSS y Git. Aprendo rápido y siempre busco expandir mi conocimiento y conjunto de habilidades. Soy un jugador de equipo y estoy emocionado de trabajar con otros para crear aplicaciones increíbles.          </p>
         </div>
@@ -70,14 +70,14 @@ const AboutSection = () => {
             Skills
           </TabButton>
           <TabButton
-            selectTab={() => handleTabChange("education")}
-            active={tab === "education"}
+            selectTab={() => handleTabChange("educacion")}
+            active={tab === "educacion"}
           >
             Education
           </TabButton>
           <TabButton
-            selectTab={() => handleTabChange("certifications")}
-            active={tab === "certifications"}
+            selectTab={() => handleTabChange("certificaciones")}
+            active={tab === "certificaciones"}
           >
             Certifications
           </TabButton>
