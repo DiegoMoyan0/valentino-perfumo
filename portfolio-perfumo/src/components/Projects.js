@@ -3,8 +3,8 @@ import '../static/css/projects.css'
 import { Col, Container, Tab, Row, Nav } from 'react-bootstrap';
 import ProjectCard from './ProjectCards';
 import background from '../static/img/back.jpg';
-import hd from '../static/img/hero.jpeg';
-import joan from  '../static/img/hero.jpeg';
+import hd from '../static/img/hd.png';
+import joan from  '../static/img/jv.png';
 import ml from  '../static/img/logo-mercado-liebre.svg';
 
 const Projects = () => {
