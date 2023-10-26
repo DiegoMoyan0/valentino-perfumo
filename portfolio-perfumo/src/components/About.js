@@ -1,5 +1,5 @@
-import React, { useTransition, useState } from "react";
-import about from "../static/img/about-image.png";
+import React, { useTransition, useState, useEffect } from "react";
+import about from "../static/img/about.gif";
 import TabButton from "./TabButton";
 import "../static/css/about.css";
 
@@ -42,6 +42,11 @@ const TAB_DATA = [
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
+  const [showImage, setShowImage] = useState(false); // Agregar estado para la animación de la imagen
+
+  useEffect(() => {
+    setShowImage(true);
+  }, []);
 
   const handleTabChange = (id) => {
     startTransition(() => {
@@ -53,7 +58,19 @@ const AboutSection = () => {
     <section className="text-white about-section" id="about">
       <div className="image-container">
         <div>
-          <img src={about} alt="Description" className="about-image" />
+          <img
+            src={about}
+            alt="Description"
+            className="about-image"
+            style={{
+              maxWidth: "70%",
+              height: "auto",
+              borderRadius: "10%",
+              opacity: showImage ? 1 : 0,
+              transform: showImage ? "scale(1)" : "scale(0.9)",
+              transition: "opacity 4s, transform 4s",
+            }}
+          />
         </div>
       </div>
       <div className="text-container">

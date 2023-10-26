@@ -1,0 +1,125 @@
+#services {
+    margin: 20px auto;
+  }
+  
+  .services-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .services-row {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+  }
+  
+  .main-col {
+    flex: 1;
+    mix-blend-mode: lighten;
+    margin-bottom: 12px;
+  }
+  
+  .main-heading {
+    margin-top: 10px;
+    font-size: 2rem;
+    color: #AD5389 ;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    color: white;
+    max-width: 455px;
+    margin-top: 20px;
+}
+
+.main-button {
+      margin-top: 20px;
+    background-image: linear-gradient(to right, #AD5389, #3C1053);
+    border: 2px solid;
+    border-image: linear-gradient(to right, #AD5389, #3C1053) 1 !important;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .services-list {
+    flex: 1;
+  }
+  
+  .service-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    height: 146px;
+    margin-bottom: 38px;
+    display: flex;
+  }
+  
+  .service-text {
+    max-width: 476px;
+  }
+  
+  .service-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: white;
+  }
+  
+  .service-description {
+    color: white;
+    max-height: 100px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+  .service-link {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-end;
+  }
+  
+  .service-btn {
+    width: 9px;
+    height: 9px;
+    margin-bottom: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-learn-more {
+    font-size: 0.875rem;
+    color: white;
+  }
+  
+
+  .arrow-icon {
+    color: white;
+    transform: rotate(45deg); 
+
+  }
+  
+  .circle {
+    display: inline-block;
+    width: 30px; 
+    height: 30px;
+    background-image: linear-gradient(to right, #AD5389, #3C1053);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .learn-more-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #AD5389 ;
+  }
+  
