@@ -42,7 +42,7 @@ const TAB_DATA = [
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
-  const [showImage, setShowImage] = useState(false); // Agregar estado para la animación de la imagen
+  const [showImage, setShowImage] = useState(false);
 
   useEffect(() => {
     setShowImage(true);
