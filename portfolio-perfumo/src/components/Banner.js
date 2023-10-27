@@ -11,8 +11,8 @@ const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const period = 2000;
+    const [delta, setDelta] = useState(250 - Math.random() * 50);
+    const period = 250 - Math.random() * 50;
 
 
     useEffect(() => {
@@ -25,19 +25,20 @@ const Banner = () => {
     const tick = () => {
         let i = loopNum % toRotate.length;
         let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.length -1) : fullText.substring(0, text.length + 1);
+        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
 
         setText(updatedText);
 
         if (!isDeleting && updatedText === fullText) {
             setIsDeleting(true);
             setDelta(period);
-        } else if(isDeleting && updatedText === '') {
+        } else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
+            setDelta(period);
         }
     }
+
 
     return (
 <section className='banner' id='home'>
@@ -46,23 +47,36 @@ const Banner = () => {
             <Col xs={12} md={6} xl={7}>
                 <Button className="custom-button mt-4">Bienvenido a mi portafolio</Button>
                 <h1 id='title'>
-                    {`Diego Moyano`}
+                    {`Valentino Perfumo`}
                     <br />
-                    <span className='wrap gradient-text'>Soy {text}</span>
                 </h1>
-                <p className="white-text">Estoy comprometido a crear soluciones web robustas y elegantes que impulsen el éxito de mis clientes. ¡Emocionado de contribuir con mis habilidades y experiencia a tu próximo proyecto!</p>
+                    <span id='subtitle' className='wrap gradient-text'>Soy {text}</span>
+                <p className="white-text paragraph">Estoy comprometido a crear soluciones web robustas y elegantes que impulsen el éxito de mis clientes. ¡Emocionado de contribuir con mis habilidades y experiencia a tu próximo proyecto!</p>
             </Col>
             <Col xs={12} md={6} xl={5} className="text-center mt-4 mb-4">
-                <img src={headerImg} alt="Header img" width={300} height={300} className="custom-image img-fluid" />
+                <img src={headerImg} alt="Header img" width={400} height={400} className="custom-image img-fluid" />
             </Col>
-            <Col className="d-flex align-items-center mb-4">
-            <FaInstagram className="gradient-icons mr-3" size={20} />
-                <FaLinkedin className="gradient-icons mr-3" size={20} />
-                <FaGithub className="gradient-icons mr-3" size={20} />
-                <FaTiktok className="gradient-icons mr-3" size={20} />
-                <a className="gradient-text ref" onClick={() => console.log('connect')}>Mi Curriculum <FaCloudDownloadAlt className='gradient-icons ml-2'  size={20}/></a>
-            </Col>
-        </Row>
+            <Col xs={12} md={6} className="d-flex justify-content-center justify-content-md-start mb-4">
+                        <a href="https://www.instagram.com/diegomoyan0/" target="_blank" rel="noopener noreferrer" className="icon-link">
+                            <FaInstagram className="gradient-icons mr-3" size={35} />
+                        </a>
+                        <a href="https://www.linkedin.com/in/diegomoyan0/" target="_blank" rel="noopener noreferrer" className="icon-link">
+                            <FaLinkedin className="gradient-icons mr-3" size={35} />
+                        </a>
+                        <a href="https://github.com/DiegoMoyan0" target="_blank" rel="noopener noreferrer" className="icon-link">
+                            <FaGithub className="gradient-icons mr-3" size={35} />
+                        </a>
+                    </Col>
+        <Col xs={12} md={6} className="d-flex justify-content-center justify-content-md-start mb-4">
+  <a 
+    className="gradient-text ref" 
+    href="/static/Perfumo-Valentino-CV.pdf" 
+    download="Perfumo-Valentino-CV.pdf"
+  >
+    Mi Curriculum <FaCloudDownloadAlt className='gradient-icons ml-2'  size={35}/>
+  </a>
+</Col>
+    </Row>
     </Container>
 </section>
 

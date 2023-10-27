@@ -1,8 +1,12 @@
 #contact{
     background: linear-gradient(135deg, #2a2c5b, #565b91, #88304e);
-    padding: 100px;
+    padding: 50px 20px; 
     display: flex;
     justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    padding-top: 7rem;
+    padding-bottom: 9rem;
 }
 
 .contact-container {
@@ -16,6 +20,16 @@
     color: white !important;
     flex: 1;
     margin-right: 20px;
+}
+
+#title-contact{
+    color: #252525;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+#subtitle-contact{
+    
+    font-size: 3rem;
 }
 
 .contact-form {
@@ -33,11 +47,13 @@
     margin: 10px auto;
     font-size: 1rem;
     line-height: 1.25;
-    color: white;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #edf2f7;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-input::placeholder{
+    color: #252525;
 }
 
 .form-input:focus {
@@ -47,12 +63,13 @@
 }
 
 .form-button {
+    font-size: 1.2rem;
     margin: 10px auto;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 2.5rem;
     border: none;
     border-radius: 0.25rem;
     background: linear-gradient(to right, #DA70D6, #FF70A6);
-    color: white;
+    color: #252525;
     transition: background 0.3s;
 }
 

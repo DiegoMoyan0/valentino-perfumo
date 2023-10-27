@@ -9,7 +9,7 @@ const Contact = () => {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_dyc1ilh', 'template_4o7cb35', form.current, 'CJ-5s-S4HBiWN8ZbU')
+      emailjs.sendForm('service_tkrdj5r', 'template_xliw3nb', form.current, 'qBv1F8H1XaE5Nej-0')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -23,8 +23,8 @@ const Contact = () => {
         <div className="row">
             <div className="col-md-6 contact-info">
                 <div>
-                    <h4>Get in touch</h4>
-                    <h2>Let's work <br /> together!</h2>
+                    <h4 id='title-contact'>Contactate conmigo</h4>
+                    <h2 id='subtitle-contact'>Vamos a trabajar<br /> juntos!</h2>
                 </div>
             </div>
             <div className="col-md-6">

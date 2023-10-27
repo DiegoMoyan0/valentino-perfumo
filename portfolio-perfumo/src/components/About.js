@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="">
+      <ul className="paragraph">
         <li>Node.js</li>
         <li>Express</li>
         <li>Sequelize</li>
@@ -21,7 +21,7 @@ const TAB_DATA = [
     title: "Educacion",
     id: "educacion",
     content: (
-      <ul className="">
+      <ul className="paragraph">
         <li>Fullstack Academy of Code</li>
         <li>University of California, Santa Cruz</li>
       </ul>
@@ -31,7 +31,7 @@ const TAB_DATA = [
     title: "Certificaciones",
     id: "certificaciones",
     content: (
-      <ul className="">
+      <ul className="paragraph">
         <li>AWS Cloud Practitioner</li>
         <li>Google Professional Cloud Developer</li>
       </ul>
@@ -63,9 +63,6 @@ const AboutSection = () => {
             alt="Description"
             className="about-image"
             style={{
-              maxWidth: "70%",
-              height: "auto",
-              borderRadius: "10%",
               opacity: showImage ? 1 : 0,
               transform: showImage ? "scale(1)" : "scale(0.9)",
               transition: "opacity 4s, transform 4s",
@@ -75,8 +72,8 @@ const AboutSection = () => {
       </div>
       <div className="text-container">
         <div>
-          <h2 className="">Sobre Mi</h2>
-          <p className="">
+          <h2 className="title-about">Sobre Mi</h2>
+          <p className="paragraph">
           Soy un desarrollador web full stack con pasión por crear aplicaciones web interactivas y receptivas. Tengo experiencia trabajando con JavaScript, React, Node.js, Express, Sequelize, HTML, CSS y Git. Aprendo rápido y siempre busco expandir mi conocimiento y conjunto de habilidades. Soy un jugador de equipo y estoy emocionado de trabajar con otros para crear aplicaciones increíbles.          </p>
         </div>
         <div>

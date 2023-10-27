@@ -1,3 +1,8 @@
-.footer{
-    background-color: #252525;
+.footer {
+    width: 100%;
+    background-color: #252525 ;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: -5px;
 }
+

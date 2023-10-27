@@ -6,8 +6,8 @@ const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center text-white">
-          <Col size={12} sm={12} className="text-center text-sm">
-            <p>Copyright 2023. All Rights Reserved</p>
+          <Col size={12} sm={12} className="text-center copy">
+            <p id="copy">© Copyright 2023. Todos los derechos reservados</p>
           </Col>
         </Row>
       </Container>

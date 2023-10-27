@@ -4,6 +4,11 @@
 
 #title {
     color: white !important;
+    font-size: 4rem;
+}
+
+#subtitle {
+    font-size: 3rem;
 }
 
 .custom-button {
@@ -14,15 +19,25 @@
     padding: 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #ff50cb; 
+    -webkit-text-stroke: 1px #ff50cb;
 }
-.ref{
-text-decoration: none;}
+
+.paragraph {
+    font-size: 1.2rem;
+}
+
+.ref {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
 .white-text {
     color: white;
 }
 
 .gradient-icons {
+    size: 1rem;
     color: #DA70D6 !important;
     margin-right: 10px;
 }
@@ -33,4 +48,5 @@ text-decoration: none;}
 
 .custom-image {
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(255, 0, 255, 0.8); }
+    box-shadow: 0 4px 8px rgba(255, 0, 255, 0.8);
+}

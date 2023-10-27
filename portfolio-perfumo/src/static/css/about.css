@@ -2,10 +2,18 @@
   margin-top: 100px;
   padding-top: 100px;
   background: linear-gradient(135deg, #2a2c5b, #565b91, #88304e);
-  }
+}
 
 .about-section {
   display: flex;
+}
+
+.title-about {
+  font-size: 3rem;
+}
+
+.paragraph {
+  font-size: 1.2rem;
 }
 
 .image-container {
@@ -20,9 +28,10 @@
 }
 
 .about-image {
-  max-width: 70%;
+  width: 100%;
   height: auto;
   border-radius: 10%;
+
 }
 
 
