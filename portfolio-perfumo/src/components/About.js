@@ -9,11 +9,10 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="paragraph">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>Premier</li>
+        <li>After Effects</li>
+        <li>Ilustrator</li>
+        <li>Photoshop</li>
       </ul>
     ),
   },
@@ -22,8 +21,7 @@ const TAB_DATA = [
     id: "educacion",
     content: (
       <ul className="paragraph">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Estudiando la carrera de Diseño Multimedial en la Escuela DaVinci</li>
       </ul>
     ),
   },
@@ -32,8 +30,7 @@ const TAB_DATA = [
     id: "certificaciones",
     content: (
       <ul className="paragraph">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li> En proceso</li>
       </ul>
     ),
   },
@@ -60,7 +57,7 @@ const AboutSection = () => {
         <div>
           <img
             src={about}
-            alt="Description"
+            alt="Descripcion"
             className="about-image"
             style={{
               opacity: showImage ? 1 : 0,
@@ -74,7 +71,7 @@ const AboutSection = () => {
         <div>
           <h2 className="title-about">Sobre Mi</h2>
           <p className="paragraph">
-          Soy un desarrollador web full stack con pasión por crear aplicaciones web interactivas y receptivas. Tengo experiencia trabajando con JavaScript, React, Node.js, Express, Sequelize, HTML, CSS y Git. Aprendo rápido y siempre busco expandir mi conocimiento y conjunto de habilidades. Soy un jugador de equipo y estoy emocionado de trabajar con otros para crear aplicaciones increíbles.          </p>
+          Como editor de videos, mi pasión radica en la creación de contenido visualmente cautivador y significativo. Tengo experiencia sólida en el uso de herramientas como Adobe Premiere, After Effects, Ilustrator, entre otros. Mi enfoque se centra en la narrativa visual, la edición creativa y la producción de videos impactantes. Estoy constantemente buscando mejorar mis habilidades, explorando nuevas técnicas y tendencias para ofrecer resultados innovadores. Colaborar en equipo es una de mis fortalezas; estoy emocionado por trabajar con vos para lograr un gran crecimiento en tus redes sociales. </p>
         </div>
         <div>
           <TabButton
@@ -87,13 +84,13 @@ const AboutSection = () => {
             selectTab={() => handleTabChange("educacion")}
             active={tab === "educacion"}
           >
-            Education
+            Educacion
           </TabButton>
           <TabButton
             selectTab={() => handleTabChange("certificaciones")}
             active={tab === "certificaciones"}
           >
-            Certifications
+            Certificaciones
           </TabButton>
         </div>
         <div>

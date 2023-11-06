@@ -7,21 +7,21 @@ import '../static/css/services.css';
 const services = [
     {
         id: 1,
-        name: ' Gallego',
-        description: 'Im Freelance Front-end Developer With over 5 years of experience I m Freelance Front-end Developer With over 5 years of experience',
-        link: 'Learn More',
+        name: ' Diego Salete',
+        description: 'Creador de contenido experimentado en ecommerce y en el crecimiento de tu marca/producto en las redes sociales',
+        link: 'Leer Mas',
     },
     {
         id: 2,
-        name: 'Señora',
-        description: 'Im Freelance Front-end Developer With over 5 years of experience I m Freelance Front-end Developer With over 5 years of experience',
-        link: 'Learn More',
+        name: 'Jocelyn Arellano',
+        description: 'Una persona espiritual que que busca significado más allá de lo material, interesada en la conexión entre mente, cuerpo y espíritu. Se enfoca en el crecimiento personal, la compasión y la paz interior.',
+        link: 'Leer Mas',
     },
     {
         id: 3,
         name: 'Michelle',
-        description: 'Im Freelance Front-end Developer With over 5 years of experience I m Freelance Front-end Developer With over 5 years of experience',
-        link: 'Learn More',
+        description: 'Influencer que comparte consejos financieros en redes sociales para ayudar a otros a crecer económicamente, brindando tips prácticos sobre ahorro, inversión y presupuesto.',
+        link: 'Leer Mas',
     },
 ];
 
@@ -33,8 +33,7 @@ const Services = () => {
                     <Col className="main-col">
                         <h2 className="main-heading">What I Do.</h2>
                         <h3 className="sub-heading">
-                            I'm Freelance Front-end Developer With over 5 years of experience
-                        </h3>
+                        Soy un editor de video autodidacta que trabaja Freelance para personas de todo el mundo                        </h3>
                         <Button variant="primary" size="sm" className="main-button">
                             See my work
                         </Button>

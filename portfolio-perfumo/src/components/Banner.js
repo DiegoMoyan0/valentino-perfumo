@@ -9,7 +9,7 @@ import '../static/css/banner.css'
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+    const toRotate = ["Designer", "Content Manager", "Web Developer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(250 - Math.random() * 50);
     const period = 250 - Math.random() * 50;
@@ -51,20 +51,17 @@ const Banner = () => {
                     <br />
                 </h1>
                     <span id='subtitle' className='wrap gradient-text'>Soy {text}</span>
-                <p className="white-text paragraph">Estoy comprometido a crear soluciones web robustas y elegantes que impulsen el éxito de mis clientes. ¡Emocionado de contribuir con mis habilidades y experiencia a tu próximo proyecto!</p>
+                <p className="white-text paragraph">Me dedico a la creación de contenido audiovisual para potenciar tus redes. Estoy entusiasmado por aportar mis habilidades y experiencia en la edición audiovisual a tu próximo proyecto, buscando siempre la excelencia y la narrativa visual que destaque.</p>
             </Col>
             <Col xs={12} md={6} xl={5} className="text-center mt-4 mb-4">
                 <img src={headerImg} alt="Header img" width={400} height={400} className="custom-image img-fluid" />
             </Col>
             <Col xs={12} md={6} className="d-flex justify-content-center justify-content-md-start mb-4">
-                        <a href="https://www.instagram.com/diegomoyan0/" target="_blank" rel="noopener noreferrer" className="icon-link">
+                        <a href="https://www.instagram.com/valenperfumo/" target="_blank" rel="noopener noreferrer" className="icon-link">
                             <FaInstagram className="gradient-icons mr-3" size={35} />
                         </a>
-                        <a href="https://www.linkedin.com/in/diegomoyan0/" target="_blank" rel="noopener noreferrer" className="icon-link">
+                        <a href="https://www.linkedin.com/in/valentino-perfumo-921098240/" target="_blank" rel="noopener noreferrer" className="icon-link">
                             <FaLinkedin className="gradient-icons mr-3" size={35} />
-                        </a>
-                        <a href="https://github.com/DiegoMoyan0" target="_blank" rel="noopener noreferrer" className="icon-link">
-                            <FaGithub className="gradient-icons mr-3" size={35} />
                         </a>
                     </Col>
         <Col xs={12} md={6} className="d-flex justify-content-center justify-content-md-start mb-4">
