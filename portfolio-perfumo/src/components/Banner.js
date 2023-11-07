@@ -64,7 +64,7 @@ const Banner = () => {
                             <FaLinkedin className="gradient-icons mr-3" size={35} />
                         </a>
                     </Col>
-        <Col xs={12} md={6} className="d-flex justify-content-center justify-content-md-start mb-4">
+        {/* <Col xs={12} md={6} className="d-flex justify-content-center justify-content-md-start mb-4">
   <a 
     className="gradient-text ref" 
     href="/static/Perfumo-Valentino-CV.pdf" 
@@ -72,7 +72,7 @@ const Banner = () => {
   >
     Mi Curriculum <FaCloudDownloadAlt className='gradient-icons ml-2'  size={35}/>
   </a>
-</Col>
+</Col> */}
     </Row>
     </Container>
 </section>

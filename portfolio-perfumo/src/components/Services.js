@@ -31,11 +31,11 @@ const Services = () => {
             <Container className="services-container">
                 <Row className="services-row">
                     <Col className="main-col">
-                        <h2 className="main-heading">What I Do.</h2>
+                        <h2 className="main-heading">Proyectos</h2>
                         <h3 className="sub-heading">
                         Soy un editor de video autodidacta que trabaja Freelance para personas de todo el mundo                        </h3>
                         <Button variant="primary" size="sm" className="main-button">
-                            See my work
+                            Mis Trabajos
                         </Button>
                     </Col>
                     <Col className="services-list">
